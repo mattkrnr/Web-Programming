@@ -1,0 +1,19 @@
+<head>
+    <meta charset="utf-8">
+    <title>Shows Found</title>
+    <link rel="stylesheet" href="/public/site.css">
+</head>
+<body>
+    <main>
+        <h1>Shows Found</h1>
+        <h2>{{searchTerm}}</h2>
+        <a href = "http://localhost:3000/">Make Another Search</a>
+        <ul>
+            {{#each matches}}
+            <li>
+                <a href="/shows/{{show.id}}">{{show.name}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </main>
+</body>
